@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "Node",
+        "target": "ESNext",
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "baseUrl": "./",
+        "paths": {
+            "./*": [
+                "*"
+            ]
+        }
+    },
+}

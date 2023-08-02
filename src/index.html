@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="index.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+
+        #chattext {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            align-content: flex-end;
+            width: 100%;
+            height: calc(100% - 50px);
+        }
+
+        .usergui {
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+
+        #textbox {
+            width: calc(100% - 34px);
+            height: calc(100% - 4px);
+            padding: 0;
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            background-color: rgb(54, 137, 255);
+        }
+
+        #setting {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .settingwindow {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .settingtop {
+            align-items: center;
+        }
+
+        .settingtop,
+        .settingbottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50%;
+        }
+
+        #settingtextbox {
+            width: calc(200px - 4px);
+            height: calc(30px - 4px);
+        }
+
+        #settingbutton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            font-size: 10px;
+            background-color: antiquewhite;
+        }
+
+        .message {
+            width: 100%;
+            margin: 10px 0px 0 5px;
+        }
+
+        .messageusername {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="chattext">
+        </div>
+        <div class="usergui">
+            <input id="textbox" type="text">
+            <div id="button">送信</div>
+        </div>
+    </div>
+    <div id="setting">
+        <div class="settingwindow">
+            <div class="settingtop">
+                <p style="margin: 0;">ユーザー名を決定してください。</p>
+            </div>
+            <div class="settingbottom">
+                <input id="settingtextbox" type="text">
+                <div id="settingbutton">決定</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
